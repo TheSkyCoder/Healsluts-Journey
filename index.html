@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Healslut's Journey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="assets/game.css" media="screen">
+    </head>
+    <body>
+
+        <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary" id="engine_topbar">
+            <div class="container">
+                <a class="navbar-brand" href="#" id="engine_nav_button">Healslut's Journey</a>
+                <span class="ml-auto text-white"><small>Score:</small> <span id="engine_currentScore">0</span></span>
+            </div>
+        </div>
+
+        <div id="engine_master_container" class="container master-game-container text-center">
+
+            <!-- ====================================================================================================== -->
+            <div id="loading_screen" class="text-center loading_screen">
+                <h1>Loading...</h1>
+            </div>
+            <div id="about_screen" class="text-left about_screen">
+                <h1>Healslut's Journey</h1>
+                <h6>Version 1.0-alpha1</h6>
+                <hr />
+                <p>Created by SkyCoder <small>(/u/TheHSSkyCoder)</small></p>
+                <p>Partially based on a game by atsn <small>(/u/keystroke_atsn)</small></p>
+                <hr />
+                <small>
+                    This game is open-sourced under the GNU Affero General Public License 3.0 (see the included LICENSE file for more details).
+                    <br />
+                    Grab the source on GitHub at <i>github.com/TheSkyCoder/Healsluts-Journey</i>
+                </small>
+                <hr />
+                <br />
+                <a class="btn btn-block btn-info" href="#" id="hsp_hideAboutGameScreenBtn">Back to main menu</a>
+            </div>
+            <!-- ====================================================================================================== -->
+            <div id="e_notification_screen" class="engine_screen">
+                <div id="e_notification_screen_ntext"></div>
+                <br /><br />
+                <a class="btn btn-block btn-success" href="#" id="e_notification_screen_dbutton">Continue</a>
+            </div>
+            <div id="e_question_screen" class="engine_screen">
+                <div id="e_question_screen_qtext"></div>
+                <br /><br />
+                <a class="btn btn-block btn-success" href="#" id="e_question_screen_yesbutton">Yes</a>
+                <br />
+                <a class="btn btn-block btn-danger" href="#" id="e_question_screen_nobutton">No</a>
+            </div>
+            <!-- ====================================================================================================== -->
+            <div id="welcome_screen" class="engine_screen">
+                <h1 class="game_title">Healslut's<br />Journey</h1>
+                <br /><br /><hr />
+                <a class="btn btn-block btn-lg btn-success" href="#" id="mm_button_start_easy_mode">Easy mode</a>
+                <br />
+                <a class="btn btn-block btn-lg btn-danger" href="#" id="mm_button_start_hard_mode">Hard mode</a>
+                <hr />
+                <a class="btn btn-block btn-info" href="#" id="hsp_showAboutGameScreenBtn">About</a>
+            </div>
+            <!-- ====================================================================================================== -->
+            <div id="mission_screen" class="engine_screen">
+                <div class="text-left">
+                    <h2 id="mission_screen_mname">#Name!</h2>
+                    <div id="mission_screen_instructions" style="margin-top:15px;"></div>
+
+                    <hr />
+                    <div id="mission_conditional_instruction_tdiv" class="mission_conditional_instruction">-- CONDITIONAL INST DIV --</div>
+                    <hr id="mission_conditional_instruction_divider" class="mission_conditional_instruction" />
+
+                    <div class="row">
+                        <div class="col-6">
+                            <a class="btn btn-block btn-info" href="#" id="mission_btn_onkill">Killed<br />someone</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="btn btn-block btn-success" href="#" id="mission_btn_onult">Ultimate<br />ability used</a>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-6">
+                            <a class="btn btn-block btn-success" href="#" id="mission_btn_onrez">Resurrected<br />a teammate</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="btn btn-block btn-danger" href="#" id="mission_btn_ondeath">Was killed<br />or died</a>
+                        </div>
+                    </div>
+                    <hr />
+                    <a class="btn btn-block btn-info" href="#" id="mission_btn_endgame">CURRENT GAME HAS ENDED</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <br />
+
+        <!-- Base prerequisites and engine files -->
+        <script src="assets/scripts/jquery.min.js"></script>
+        <script src="assets/scripts/popper.min.js"></script>
+        <script src="assets/scripts/bootstrap.min.js"></script>
+        <script src="game/engine.js"></script>
+        <script src="game/healslut_journey.js"></script>
+
+        <!-- Missions -->
+        <script src="game/missions/spanking_time.js"></script>
+        <script src="game/missions/ride_it.js"></script>
+        <script src="game/missions/resurrection_slut.js"></script>
+        <script src="game/missions/tit_abuse.js"></script>
+        <script src="game/missions/extreme_spankings.js"></script>
+        <script src="game/missions/footjob_time.js"></script>
+        <script src="game/missions/suck_them_all.js"></script>
+        <script src="game/missions/slut_it_up.js"></script>
+        <script src="game/missions/gag_on_it.js"></script>
+        <script src="game/missions/body_writing.js"></script>
+        <script src="game/missions/swallow_it.js"></script>
+        <script src="game/missions/time_for_a_facial.js"></script>
+        <script src="game/missions/ride_it_hard.js"></script>
+        <script src="game/missions/double_blowjob.js"></script>
+        <script src="game/missions/healslut_brainwashing.js"></script>
+        <script src="game/missions/take_it_deep.js"></script>
+        <script src="game/missions/double_penetration.js"></script>
+        <script src="game/missions/twin_blowjob.js"></script>
+        <script src="game/missions/get_messy.js"></script>
+        <script src="game/missions/edging.js"></script>
+
+    </body>
+</html>
