@@ -1,0 +1,43 @@
+@import "./bootstrap.css";
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.master-game-container{
+    margin-top: 90px;
+}
+
+.master-game-container-lowmargin{
+    margin-top: 40px;
+}
+
+.loading_screen{
+    z-index: 9999;
+    background: #ccc;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.game_title{
+    font-size: 4em;
+}
+
+.bg-easymode{
+    background: #5C9418 !important;
+    border-color: #518511 !important;
+}
+
+.mission_conditional_instruction{
+    font-size: 1.05em;
+}
+
+#e_question_screen_qtext{
+    font-size: 1.3em;
+}
+
+.text-white{
+    color: #fff !important;
+}
