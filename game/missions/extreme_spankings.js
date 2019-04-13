@@ -6,8 +6,13 @@ function game_init_extreme_spankings(){
     show_mission_screen("Extreme spankings", "Play the match normally, but get a paddle ready!");
 }
 function on_death_extreme_spankings(){
+    
+    var actual_spank_count = current_game_counter_x;
+    if(current_game_counter_x >= 32){
+        actual_spank_count = 32;
+    }
 
-    showConditionalInstruction("<span style='color:#FF0D0D'>Bad slut! Spank your ass " + current_game_counter_x + " times with that paddle.</span>");
+    showConditionalInstruction("<span style='color:#FF0D0D'>Bad slut! Spank your ass " + actual_spank_count + " times with that paddle.</span>");
 
     // Calculate new X
     current_game_counter_x *= 2;
